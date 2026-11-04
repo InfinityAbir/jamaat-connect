@@ -1,0 +1,35 @@
+version: '3.8'
+
+services:
+  api:
+    build:
+      context: .
+      dockerfile: src/backend/JamaatConnect.Api/Dockerfile
+    volumes:
+      - ./src/backend:/source/src/backend
+      - ~/.nuget/packages:/root/.nuget/packages:ro
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      # Enable hot reload for .NET (requires debugger attach)
+      DOTNET_USE_POLLING_FILE_WATCHER: 1
+      # For development, you might want to disable SSL or use self-signed certs
+      ASPNETCORE_URLS: http://+:8080
+    command: >
+      bash -c "
+      dotnet watch run --project src/backend/JamaatConnect.Api/JamaatConnect.Api.csproj
+      "
+
+  frontend:
+    build:
+      context: .
+      dockerfile: src/frontend/Dockerfile
+    volumes:
+      - ./src/frontend:/app
+      - /app/node_modules
+    environment:
+      # Angular development settings
+      NG_CLI_ANALYTICS: ci
+    command: >
+      bash -c "
+      npm start
+      "

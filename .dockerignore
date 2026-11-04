@@ -1,0 +1,22 @@
+# Source control and local tooling
+.git
+.codebase-memory
+.agents
+.codex
+
+# Build outputs must never be copied into a container build. In particular,
+# .NET obj files contain host-specific NuGet paths that break Linux publishes.
+**/bin
+**/obj
+
+# Frontend dependencies and generated Angular output are installed/built inside
+# the image instead.
+src/frontend/node_modules
+src/frontend/dist
+src/frontend/.angular
+
+# Local logs and development-only files
+*.log
+*.err
+.env
+start.log

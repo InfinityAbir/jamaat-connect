@@ -1,0 +1,36 @@
+# Secrets and local environment (never commit real credentials)
+.env
+.env.*
+!.env.example
+
+# Local tooling / agent state
+.codebase-memory/
+.agents/
+.codex/
+.claude/
+graphify-out/
+
+# Logs and scratch files
+*.log
+*.err
+enquiry.json
+test_enquiry.json
+
+# .NET build output
+**/bin/
+**/obj/
+*.user
+*.suo
+.vs/
+TestResults/
+
+# Frontend
+src/frontend/node_modules/
+src/frontend/dist/
+src/frontend/.angular/
+src/frontend/src/tailwind.generated.css
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.idea/

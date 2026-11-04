@@ -1,0 +1,9 @@
+<Solution>
+  <Folder Name="/src/" />
+  <Folder Name="/src/backend/">
+    <Project Path="src/backend/JamaatConnect.Api/JamaatConnect.Api.csproj" />
+    <Project Path="src/backend/JamaatConnect.Application/JamaatConnect.Application.csproj" />
+    <Project Path="src/backend/JamaatConnect.Domain/JamaatConnect.Domain.csproj" />
+    <Project Path="src/backend/JamaatConnect.Infrastructure/JamaatConnect.Infrastructure.csproj" />
+  </Folder>
+</Solution>
