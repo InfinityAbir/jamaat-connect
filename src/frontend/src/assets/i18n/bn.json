@@ -1,6 +1,9 @@
 {
   "HOME": "জামাআত কানেক্ট",
   "HOME_DESCRIPTION": "আপনার কাছে আসন্ন তবলিগী জামাআত সুযোগ খুঁজুন",
+  "TRUST_VERIFIED_LISTINGS": "যাচাইকৃত তালিকা",
+  "TRUST_PRIVATE_ENQUIRIES": "ব্যক্তিগত জিজ্ঞাসা",
+  "TRUST_MODERATED_CONTENT": "মডারেটেড কন্টেন্ট",
   "SEARCH": "অনুসন্ধান",
   "SEARCH_PLACEHOLDER": "জামাআত খুঁজুন...",
   "SUBMIT_LISTING": "তথ্য জমা দিন",

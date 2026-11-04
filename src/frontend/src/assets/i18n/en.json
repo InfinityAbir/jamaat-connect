@@ -1,6 +1,9 @@
 {
   "HOME": "Jamaat Connect",
   "HOME_DESCRIPTION": "Discover upcoming Tablighi Jamaat opportunities near you",
+  "TRUST_VERIFIED_LISTINGS": "Verified listings",
+  "TRUST_PRIVATE_ENQUIRIES": "Private enquiries",
+  "TRUST_MODERATED_CONTENT": "Moderated content",
   "SEARCH": "Search",
   "SEARCH_PLACEHOLDER": "Search for Jamaat...",
   "SUBMIT_LISTING": "Submit Listing",
