@@ -1,6 +1,7 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { TranslatePipe } from '@app/shared/pipes/translate.pipe';
+import { LanguageService } from '@app/core/services/language.service';
 
 @Component({
   selector: 'jc-footer',
@@ -48,8 +49,20 @@ import { TranslatePipe } from '@app/shared/pipes/translate.pipe';
           <div>
             <h3 class="text-sm font-semibold text-gold-400 uppercase tracking-wider mb-4">{{ 'LANGUAGE_SWITCH' | translate }}</h3>
             <div class="flex gap-2 mb-6">
-              <button type="button" class="px-3 py-1.5 rounded-lg text-xs font-medium bg-primary-800 text-gold-400 hover:bg-primary-700 transition-colors" aria-label="Bengali">বাংলা</button>
-              <button type="button" class="px-3 py-1.5 rounded-lg text-xs font-medium bg-primary-800 text-ivory-300 hover:bg-primary-700 transition-colors" aria-label="English">English</button>
+              <button type="button"
+                class="px-3 py-1.5 rounded-lg text-xs font-medium bg-primary-800 hover:bg-primary-700 transition-colors"
+                [class.text-gold-400]="lang.currentLang() === 'bn'"
+                [class.text-ivory-300]="lang.currentLang() !== 'bn'"
+                [attr.aria-pressed]="lang.currentLang() === 'bn'"
+                (click)="lang.setLanguage('bn')"
+                aria-label="Bengali">বাংলা</button>
+              <button type="button"
+                class="px-3 py-1.5 rounded-lg text-xs font-medium bg-primary-800 hover:bg-primary-700 transition-colors"
+                [class.text-gold-400]="lang.currentLang() === 'en'"
+                [class.text-ivory-300]="lang.currentLang() !== 'en'"
+                [attr.aria-pressed]="lang.currentLang() === 'en'"
+                (click)="lang.setLanguage('en')"
+                aria-label="English">English</button>
             </div>
             <div class="flex gap-4">
               <a href="#" class="text-ivory-400 hover:text-gold-400 transition-colors" aria-label="Facebook">
@@ -77,4 +90,6 @@ import { TranslatePipe } from '@app/shared/pipes/translate.pipe';
     </footer>
   `
 })
-export class FooterComponent {}
+export class FooterComponent {
+  protected lang = inject(LanguageService);
+}
