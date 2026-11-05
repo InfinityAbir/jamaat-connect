@@ -34,3 +34,6 @@ src/frontend/src/tailwind.generated.css
 .DS_Store
 Thumbs.db
 .idea/
+
+# Local AI-workflow notes (kept locally, not published)
+OPENCODE_PROJECT_WORKFLOW.md

@@ -29,7 +29,7 @@ services:
       ASPNETCORE_ENVIRONMENT: ${ASPNETCORE_ENVIRONMENT:-Development}
       UseDockerDb: true
       ConnectionStrings__DefaultConnection: ${CONNECTION_STRINGS__DEFAULTCONNECTION:-Host=db;Database=${POSTGRES_DB:-jamaat_connect_dev};Username=${POSTGRES_USER:-jamaat_user};Password=${POSTGRES_PASSWORD:-jamaat_dev_password}}
-      # SMTP Settings (to be overridden in .env or docker-compose.override.yml)
+      # SMTP Settings (to be overridden in .env or docker-compose.dev.yml)
       SMTP__HOST: ${SMTP_HOST:-}
       SMTP__PORT: ${SMTP_PORT:-587}
       SMTP__USERNAME: ${SMTP_USERNAME:-}

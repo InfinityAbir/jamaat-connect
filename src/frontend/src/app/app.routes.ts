@@ -79,5 +79,11 @@ export const routes: Routes = [
       { path: '', redirectTo: 'locations', pathMatch: 'full' }
     ]
   },
+  ...['about', 'guidelines', 'help', 'contact', 'privacy', 'terms', 'report'].map(page => ({
+    path: page,
+    loadComponent: () => import('./features/static/static-page.component').then(m => m.StaticPageComponent),
+    data: { page },
+    title: 'PAGE_' + page.toUpperCase() + '_TITLE'
+  })),
   { path: '**', redirectTo: '' }
 ];

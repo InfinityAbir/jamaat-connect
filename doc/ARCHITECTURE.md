@@ -91,9 +91,8 @@ JamaatConnect/
 │   ├── DECISIONS.md             # Architectural & technical decision record
 │   ├── FEEDBACK.md              # Stakeholder feedback register
 │   └── CONVENTIONS.md           # Coding standards & conventions
-├── OPENCODE_PROJECT_WORKFLOW.md # Workflow guidelines
 ├── docker-compose.yml           # Local dev multi-container orchestration
-├── docker-compose.override.yml  # Local override configuration
+├── docker-compose.dev.yml  # Local override configuration
 ├── .env.example                 # Environment variable template
 ├── .gitignore
 ├── JamaatConnect.sln            # .NET Solution file

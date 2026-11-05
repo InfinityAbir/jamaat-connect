@@ -51,7 +51,7 @@ exit /b 1
 
 :docker_ready
 echo Building and starting Jamaat Connect...
-rem Use only the production compose file: docker-compose.override.yml is for a separate dev workflow.
+rem Use only the production compose file: docker-compose.dev.yml is for a separate dev workflow.
 docker compose -f "%COMPOSE_FILE%" up -d --build
 if errorlevel 1 (
   echo.

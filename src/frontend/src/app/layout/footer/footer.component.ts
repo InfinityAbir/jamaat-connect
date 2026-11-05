@@ -1,12 +1,13 @@
 import { Component, inject } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { RouterLink } from '@angular/router';
 import { TranslatePipe } from '@app/shared/pipes/translate.pipe';
 import { LanguageService } from '@app/core/services/language.service';
 
 @Component({
   selector: 'jc-footer',
   standalone: true,
-  imports: [CommonModule, TranslatePipe],
+  imports: [CommonModule, RouterLink, TranslatePipe],
   template: `
     <footer class="app-footer bg-primary-900 text-ivory-100" role="contentinfo">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">

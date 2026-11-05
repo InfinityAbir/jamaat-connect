@@ -113,7 +113,7 @@
 - [x] **Task 5.6:** SMTP Email Configuration with Development Fallback.
 - [ ] **Task 5.7:** HTTPS Configuration (reverse proxy / certificates).
 - [ ] **Task 5.8:** Operational Logging & Monitoring Setup.
-- [ ] **Task 5.9:** Backup & Restore Procedures Documentation.
+- [x] **Task 5.9:** Backup & Restore Procedures Documentation (`doc/BACKUP_RESTORE.md`).
 - [ ] **Task 5.10:** Deployment & Recovery Documentation.
 - [ ] **Task 5.11:** Final Manual Testing Checklist.
 
@@ -162,7 +162,7 @@
 | 4 | 4.10 Security Review | Not Started | P2 | Agent |
 | 5 | 5.7 HTTPS Config | Not Started | P1 | Agent |
 | 5 | 5.8 Logging/Monitoring | Not Started | P1 | Agent |
-| 5 | 5.9 Backup/Restore Docs | Not Started | P2 | Agent |
+| 5 | 5.9 Backup/Restore Docs | Done | P2 | Agent |
 | 5 | 5.10 Deployment Docs | Not Started | P2 | Agent |
 | 5 | 5.11 Testing Checklist | Not Started | P1 | Agent |
 

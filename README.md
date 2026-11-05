@@ -12,6 +12,7 @@ A community-driven web platform that helps people in Bangladesh find upcoming Ta
 ![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-4-06B6D4?logo=tailwindcss&logoColor=white)
 ![Docker](https://img.shields.io/badge/Docker-Compose-2496ED?logo=docker&logoColor=white)
 ![Status](https://img.shields.io/badge/status-in_development-orange)
+![License](https://img.shields.io/badge/license-MIT-green)
 
 **বাংলা** · **English**
 
@@ -30,6 +31,22 @@ Jamaat Connect gives the community one trusted place to look, built around three
 | 🔍 | **Discoverable** | Search by location, departure date, duration, and availability. No account needed to browse. |
 | 🛡️ | **Moderated** | Anyone can submit a listing, but nothing goes public until a moderator approves it. |
 | 🔒 | **Private** | Organizer phone numbers and addresses are never exposed publicly. Contact is shared only with explicit consent. |
+
+---
+
+## 🖼️ Screenshots
+
+<div align="center">
+
+| Home | Search |
+|---|---|
+| <img src="doc/screenshots/home.png" alt="Home page in Bengali" width="420"> | <img src="doc/screenshots/search.png" alt="Search results with filters" width="420"> |
+
+| Privacy Policy |
+|---|
+| <img src="doc/screenshots/privacy.png" alt="Privacy policy page" width="420"> |
+
+</div>
 
 ---
 
@@ -126,7 +143,7 @@ cp .env.example .env        # then edit values as needed
 docker compose up --build
 ```
 
-On Windows you can also double-click `start.bat` (and `stop.bat` to shut everything down).
+On Windows you can also double-click `start.bat` (and `stop.bat` to shut everything down). `docker-compose.dev.yml` is an experimental development override and is not used by default.
 
 | Service | URL |
 |---|---|
@@ -206,6 +223,7 @@ Track the details in [`doc/STATUS.md`](doc/STATUS.md).
 | [`doc/CONVENTIONS.md`](doc/CONVENTIONS.md) | Coding conventions |
 | [`doc/DECISIONS.md`](doc/DECISIONS.md) | Technical decisions log |
 | [`doc/STATUS.md`](doc/STATUS.md) | Implementation progress |
+| [`doc/BACKUP_RESTORE.md`](doc/BACKUP_RESTORE.md) | PostgreSQL backup and restore |
 | [`doc/MANUAL_TESTING_CHECKLIST.md`](doc/MANUAL_TESTING_CHECKLIST.md) | Manual QA checklist |
 
 ---
@@ -213,6 +231,12 @@ Track the details in [`doc/STATUS.md`](doc/STATUS.md).
 ## 🔐 Privacy and Responsibility
 
 Jamaat Connect never claims that a person or Jamaat is religiously endorsed, and a submission does not make the submitter an official organizer. Private contact details stay private, and the platform collects only what it needs to run discovery and moderation.
+
+---
+
+## 📄 License
+
+Released under the [MIT License](LICENSE).
 
 ---
 

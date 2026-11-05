@@ -23,9 +23,10 @@ export class LanguageService {
   private init(): void {
     if (isPlatformBrowser(this.platformId)) {
       const saved = localStorage.getItem('language') as Language | null;
-      if (saved) {
+      if (saved === 'bn' || saved === 'en') {
         this._currentLang.set(saved);
       }
+      document.documentElement.lang = this._currentLang();
     }
     this.loadTranslations(this._currentLang());
   }
